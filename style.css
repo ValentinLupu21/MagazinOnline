@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'ROBOTO', sans-serif;
+}
+
+body{
+    background-color: #FFFBF5;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+
+.sales-bar{
+    background-color: black;
+    height: 4rem;
+}
+
+.sales-bar h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1.2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.right-side a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+
+.right-side a:visited{
+    text-decoration: none;
+}
+
+.right-side a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.right-side a:focus{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 1.5rem;
+}
+
+.nav-links a:visited{
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:focus{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+.nav-bar{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    width: 200px;
+    pointer-events: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: orange;
+    gap: 2rem;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.product{
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.shoes-photos{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 2rem;
+
+}
+
+.header-photo{
+    width: 600px;
+}
+
+.under-header{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-photo{
+    width: 200px;
+}
+
+.third-photo{
+    width: 160px;
+  
+}
+
+.forth-photo{
+    width: 200px;
+}
+
+
+.description{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.description h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.reviews .stars{
+    color: rgb(172, 172, 172);
+    font-size: 2rem;
+    height: 2.3rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active{
+    color: #ff9c1a;
+}
+
+.reviews p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 590;
+}
+
+.reviews{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.shoes-type{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.shoes-type p{
+    width: 100%;
+    width: 11.5rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    background-color: red;
+    border: 2px solid rgb(122, 122, 122);
+    background-color: rgba(233, 233, 233, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: 2rem;
+}
+
+.description h2{
+    font-size: 2rem;
+    
+}
+
+.description .presentation{
+    width: 600px;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    line-height: 1.7rem;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+}
+
+.sizes{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style-type: none;
+    width: 600px;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sizes a{
+    max-width: 400px;
+    width: 8rem;
+    text-align: center;
+    border: 2px solid rgb(141, 141, 141);
+    background-color: transparent;
+    border-radius: 0.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.sizes a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sizes a:visited{
+    text-decoration: none;
+}
+
+.sizes a:hover{
+    text-decoration: none;
+    border-color: black;
+}
+
+.sizes a:focus{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.productQuantity{
+    position: relative;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 250px;
+    font-size: 2.2rem;
+    gap: 1.4rem;
+    font-weight: 600;
+
+}
+
+.productQuantity a{
+    position: absolute;
+}
+
+.productQuantity input{
+    background-color: rgba(187, 187, 187, 0.5);
+    width: 250px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 300;
+    font-family: 'ROBOTO', sans-serif;
+    height: 2.6rem;
+    font-size: 30px;
+}
+
+#left{
+    
+    background-color: #fff;
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    left: 2px;
+}
+
+#right
+{
+    background-color: #fff;
+    right: 2px;
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.productQuantity a{
+    text-decoration: none;
+    color: black;
+}
+
+.productQuantity a:visited{
+    text-decoration: none;
+}
+
+.productQuantity #right:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+.productQuantity #left:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+
+.priceBox{
+    margin-top: 2rem;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.priceBox .fullPrice{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: rgba(73, 73, 73, 0.5);
+    
+}
+
+.priceBox .salePrice{
+    font-size: 2.5rem;
+}
+
+.membershipAnnouncement{
+    margin-top: 2rem;
+    max-width: 650px;
+    background-color: rgba(187, 187, 187, 0.5);
+    padding-left: 2rem;
+}
+
+.membershipAnnouncement .message{
+    margin-top: -0.5rem;
+    color: rgb(141, 141, 141);
+}
+
+.buy-addToCart{
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.btn{
+    cursor: pointer;
+    width: 325px;
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.reviewsSection{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-bottom: 2px solid black;
+}
+
+
+
+.reviewsBtn{
+    
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkboxReviews"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.arrowReviews{
+    cursor: pointer;
+    transition: transform ease-in-out 0.3s;
+}
+
+.arrowReviews.arrowReviews-rotate {
+    transform: rotate(180deg);
+}
+
+input[type="checkboxReviews"]:checked + label > .arrowReviews {
+    transform: rotate(180deg);
+}
+
+.description .presentation{
+    width: 600px;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    line-height: 1.7rem;
+}
+
+@media (width < 1280px){
+    .product{
+        display: flex;
+        flex-direction: column;}
+    .nav-logo{
+        display: none;
+    }
+    .nav-links{
+            display: none;
+        }
+    
+    .right-side{
+            display: none;
+        }
+    
+    .right-side{
+            display: none;
+        }
+    
+    .dropdown{
+        display:block !important;
+    }
+
+    .product{
+        width: 100%
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    
+}
+
+@media(width < 600px){
+
+
+    .nav-links{
+        display: none;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .header-photo{
+        width: 450px;
+    }
+    .nav-logo{
+        display: none;
+    }
+    .shoes-type p{
+        width: 7rem;
+        font-size: 1.1rem;
+    }
+
+    .sizes{
+        grid-template-columns: repeat(3, 1.5fr);
+    }
+
+    .description{
+        width: 450px;
+    }
+
+    .description .sizes{
+        width: 450px;
+    }
+
+    .description .presentation{
+        width: 450px;
+    }
+}
+
+.dropdown {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    display: none;
+  }
+
+.dropdown-btn {
+    background: #1d1f24;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+  }
+
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    width: 100%;
+    z-index: 2;
+  }
+
+.dropdown-content li {
+    background: #2f3238;
+    border-radius: 0.5em;
+  }
+.dropdown-content li:hover {
+    background: #1d1f24;
+  }
+.dropdown-content li a {
+    display: block;
+    padding: 0.7em 0.5em;
+    color: #fff;
+    margin: 0.1em 0;
+    text-decoration: none;
+  }
+
+.dropdown-content.menu-open li {
+    right: 0;
+}
+
+.dropdown-content.menu-open {
+    visibility: visible;
+}
+
+.arrow.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    /* ... */
+    visibility: hidden;
+}
+
+.dropdown-content.menu-open {
+    visibility: visible;
+} 
+
+.arrow.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    /* ... */
+    overflow: hidden;
+} 
+.dropdown-content li {
+    /* ... */
+    position: relative;
+    right: 100%;
+    transition: 0.5s;
+}
+
+.dropdown-content.menu-open li {
+    right: 0;
+}
+
+.dropdown-content li {
+    /* ... */
+    transition-delay: calc(60ms * var(--delay));
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+  input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+
+
+input[type="checkbox"]:checked ~ .dropdown-content {
+    visibility: visible;
+}
+
+
+input[type="checkbox"]:checked + label > .arrow {
+    transform: rotate(180deg);
+}
+
+
+
+

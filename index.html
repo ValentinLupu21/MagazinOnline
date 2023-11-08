@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+
+
+<body>
+
+    <div class="sales-bar">
+        <h2>Profita De Reduceri De Pana La 25%!! Profita Acum!!</h2>
+    </div>
+
+    <div class="dropdown">
+        <input type="checkbox" id="dropdown" />
+        <label for="dropdown" class="dropdown-btn">
+          <span>Meniu</span>
+          <span class="arrow"></span>
+        </label>
+        <ul class="dropdown-content">
+          <li style="--delay: 1;"><a href="#">Barbati</a></li>
+          <li style="--delay: 2;"><a href="#">Femei</a></li>
+          <li style="--delay: 3;"><a href="#">Copii</a></li>
+          <li style="--delay: 4;"><a href="#">Haine</a></li>
+          <li style="--delay: 5;"><a href="#">Magazin offline</a></li>
+        </ul>
+      </div>
+
+    <nav class="nav-bar">
+
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/transparent.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+
+            <li id="link1" class="link"><a href="#">Barbati</a></li>
+            <li id="link2" class="link"><a href="#">Femei</a></li>
+            <li id="link3" class="link"><a href="#">Copii</a></li>
+            <li id="link4" class="link"><a href="#">Haine</a></li>
+            <li id="link3" class="link"><a href="#">Magazin offline</a></li>
+
+        </ul>
+
+
+    <div class="right-side">
+
+        <div class="nav-search">
+            <a href="#"><i class="ri-search-line"></i></a>
+
+        </div>
+
+        <div class="nav-checkout">
+            <a href="#"><i class="ri-shopping-bag-3-line"></i></a>
+        </div>
+
+        <div class="account">
+            <a href="#"><i class="ri-account-circle-line"></i></a>
+        </div>
+
+    </div>
+
+    </nav>
+
+
+    <div class="product">
+
+        <section class="shoes-photos">
+            <div class="header-photo">
+                <img src="images/airforce1Front.jpg">
+            </div>
+
+            <div class="under-header">
+
+                <div class="second-photo">
+                    <img src="images/airforce1Bottom.jpg">
+                </div>
+                <div class="third-photo">
+                    <img src="images/airforce1Face.jpg">
+                </div>
+                <div class="forth-photo">
+                    <img src="images/airforce1Back.jpg">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="description">
+            <p>Nike / Lifestyle</p>
+            <h1>Nike Air Force 1 '07 LV8</h1>
+            <div class="reviews">
+                <div class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                    <p>3.2k Recenzii</p>
+            </div>
+
+            <ul class="shoes-type">
+                <li><p>Running Shoes</p></li>
+                <li><p>Casual Sneakers</p></li>
+                <li><p>Limited Edition</p></li>
+            </ul>
+
+            <h2>Descriere Produs</h2>
+            <p class="presentation">Torn between 2 looks? Not any more—this AF-1 gets a 2-tone treatment from the tongue to the sole. The split-colour
+             Swooshes and soles add just the right touch of interest, and mismatched branding on the tongue and backtab completes the look. And don't worry, it still delivers cushioned comfort and the classic 
+             AF-1 look with era-echoing '80s construction, bold details and nothin'-but-net style. Step up in this elevated silhouette (literally and figuratively).</p>
+
+            <h2>Marimi</h2>
+
+            <div class="sizes">
+                <a href="#sizes">US 7</a>
+                <a href="#sizes">US 7.5</a>
+                <a href="#sizes">US 8</a>
+                <a href="#sizes">US 8.5</a>
+                <a href="#sizes">US 9</a>
+                <a href="#sizes">US 9.5</a>
+                <a href="#sizes">US 10</a>
+                <a href="#sizes">US 10.5</a>
+                <a href="#sizes">US 11</a>
+                <a href="#sizes">US 11.5</a>
+                <a href="#sizes">US 12</a>
+                <a href="#sizes">US 12.5</a>
+                <a href="#sizes">US 13</a>
+            </div>
+
+            <h2>Cantitate</h2>
+
+            <div class="productQuantity">
+                <a id="left" href="#productQuantity" onClick='decreaseCount(event, this)'><i class="ri-subtract-line"></i></a>
+                <input type="text" value="1" disabled>
+                <a id="right" href="#productQuantity" onClick='increaseCount(event, this)'><i class="ri-add-line"></i></a>
+            </div>
+
+            <div class="priceBox">
+                <h2 class="fullPrice">1344 RON</h2>
+                <h2 class="salePrice">845 RON</h2>
+            </div>
+
+            <div class="membershipAnnouncement">
+                <p>15% Reducere Pentru Abonati</p>
+                <p class="message">Fiecare client ce detine X Membership poate obtine o reducere de 15% la comenzi
+                    de minim 1.000 RON
+                </p>
+            </div>
+
+            <div class="buy-addToCart">
+                <button class="btn">Cumpara</button>
+                <button class="btn addToCart">Adauga in cos</button>
+            </div>
+
+        </section>
+
+    </div> 
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
