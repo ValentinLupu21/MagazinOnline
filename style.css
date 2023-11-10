@@ -468,7 +468,16 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
     }
 
     .description{
+        width: 650px;
+    }
+
+    .sales-bar{
         width: 100%;
+        
+        h2{
+            font-size: 1.2rem;
+        }
+
     }
 
     
@@ -513,15 +522,16 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
 
     .description{
         width: 100%;
+
+        .sizes{
+            width: 450px;
+        }
+
+        .presentation{
+            width: 100%;
+        }
     }
 
-    .description .sizes{
-        width: 450px;
-    }
-
-    .description .presentation{
-        width: 450px;
-    }
 }
 
 .dropdown {
