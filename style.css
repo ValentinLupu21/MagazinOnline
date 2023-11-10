@@ -452,7 +452,7 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
         width: 100%;
 
         h2{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 
@@ -464,6 +464,7 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
         display: none;
     }
 
+
     .product{
         display: flex;
         flex-direction: column;
@@ -474,11 +475,31 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
 
     }
 
+    .dropdown{
+        display: flex !important;
+    }
+
     .description{
         width: 100%;
 
+        .reviews{
+            width: 100%;
+            font-size: 1rem;
+
+            p{
+                padding-top: 0.5rem;
+                font-size: 1.6rem;
+            }
+        }
+
         .shoes-type{
+            gap: 0.5rem;
             
+            a{
+                
+            }
+
+
         }
 
         .presentation{
@@ -601,9 +622,7 @@ input[type="checkbox"] {
     opacity: 0;
     position: absolute;
 }
-  input[type="checkbox"]:focus + label {
-    box-shadow: 0 0 20px rgb(83, 83, 83);
-}
+
 
 
 input[type="checkbox"]:checked ~ .dropdown-content {
