@@ -487,8 +487,13 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
 
         .sizes{
             width: 100%;
-            grid-template-columns: repeat(3, 10rem);
-            font-size: 1rem;    
+            grid-template-columns: repeat(3, 1fr);
+            font-size: 0.5rem;    
+
+            a{
+                width: 7rem;
+                font-size: 1.4rem;
+            }
         }
     }
 
