@@ -202,20 +202,27 @@ a{
     list-style-type: none;
 }
 
-.shoes-type p{
-    width: 100%;
-    width: 11.5rem;
-    height: 5rem;
-    font-size: 1.4rem;
+.shoes-type a{
+    max-width: 100%;
+    width: 12.5rem;
+    height: 4rem;
+    font-size: 1rem;
     background-color: red;
     border: 2px solid rgb(122, 122, 122);
     background-color: rgba(233, 233, 233, 0.5);
+    color: rgb(73, 73, 73);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
+    margin-top: 2rem;
     margin-bottom: 2rem;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    pointer-events: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .description h2{
@@ -440,60 +447,16 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
     line-height: 1.7rem;
 }
 
-@media (width < 1280px){
-    .product{
-        display: flex;
-        flex-direction: column;}
-    .nav-logo{
-        display: none;
-    }
-    .nav-links{
-            display: none;
-        }
-    
-    .right-side{
-            display: none;
-        }
-    
-    .right-side{
-            display: none;
-        }
-    
-    .dropdown{
-        display:block !important;
-    }
-
-    .product{
-        width: 100%
-    }
-
-    .description{
-        width: 650px;
-    }
-
+@media (width < 600px) {
     .sales-bar{
         width: 100%;
-        
+
         h2{
             font-size: 1.2rem;
         }
-
     }
 
-    
-}
-
-@media(width < 600px){
-
-    .sales-bar{
-        width: 100%;
-    }
-
-    .dropdown{
-        width: 100%;
-    }
-
-    .nav-links{
+    .nav-bar{
         display: none;
     }
 
@@ -501,38 +464,35 @@ input[type="checkboxReviews"]:checked + label > .arrowReviews {
         display: none;
     }
 
-    .right-side{
-        display: none;
-    }
+    .product{
+        display: flex;
+        flex-direction: column;
 
-    .header-photo{
-        width: 100%
-    }
-    .nav-logo{
-        display: none;
-    }
-    .shoes-type p{
-        width: 7rem;
-        font-size: 1.1rem;
-    }
+        .header-photo{
+            width: 100%;
+        }
 
-    .sizes{
-        grid-template-columns: repeat(3, 1.5fr);
     }
 
     .description{
         width: 100%;
 
-        .sizes{
-            width: 450px;
+        .shoes-type{
+            
         }
 
         .presentation{
             width: 100%;
         }
+
+        .sizes{
+            width: 100%;
+            grid-template-columns: repeat(3, 10rem);
+            font-size: 1rem;    
+        }
     }
 
-}
+  }
 
 .dropdown {
     max-width: 100%;
